@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.macquarie.com/esi/common/1.0">
+  <xsd:element name="AuthenticationExpiryRequest">
+    <xsd:complexType>
+      <xsd:sequence />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="AuthenticationExpiry">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ExpiryDate" type="xsd:dateTime" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="ESIFault">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ErrorNumber" type="xsd:string" />
+        <xsd:element name="ErrorDetails" type="xsd:string" />
+        <xsd:element name="MoreDetails" type="xsd:string" minOccurs="0" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

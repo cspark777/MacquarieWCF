@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MacquarieWCF.Common10" CodeBehind="Common10.svc.cs" %>
